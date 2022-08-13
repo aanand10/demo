@@ -1,0 +1,128 @@
+/* font   */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* root style  */
+:root {
+  --main-font: "Poppins", sans-serif;
+  --white-color: #e6e7e9;
+  --big-text: 10rem;
+}
+
+/* main style  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  color: var(--white-color);
+}
+.mainContainer {
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  background-image: linear-gradient(
+    -225deg,
+    #3d4e81 0%,
+    #5753c9 48%,
+    #6e7ff3 100%
+  );
+}
+.mainContainer .title {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+.mainContainer .productBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  align-items: center;
+}
+.mainContainer .productBox .product {
+  height: 300px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgb(255 255 255 / 0%);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  margin: 1.5rem;
+}
+.mainContainer .productBox .product h1 {
+  height: 78%;
+  font-size: var(--big-text);
+  margin: 0 1rem;
+}
+.mainContainer .productBox .product h1:hover {
+  text-shadow: 2px 2px #8d9093;
+  -webkit-text-stroke: 0.3px rgb(0, 0, 0);
+}
+.mainContainer .productBox .product div {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgb(255 255 255 / 20%);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 0.3rem;
+  padding: 0.5rem 0.6rem;
+}
+.mainContainer .productBox .product div p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* product page style  */
+.mainProdPageContainer {
+  height: 100vh;
+  padding: 1rem;
+  border: 1px solid rgb(0, 183, 255);
+  color: var(--white-color) !important;
+}
+.mainProdPageContainer .mainProdContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.mainProdPageContainer .mainProdContainer .prodImg .productImg {
+  font-size: var(--big-text);
+  margin: 0 3rem;
+}
+.mainProdPageContainer .mainProdContainer .reviewBox {
+  border: 1px solid white;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgb(255 255 255 / 20%);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 0.3rem;
+  padding: 1rem 2rem;
+}
+.mainProdPageContainer .mainProdContainer .reviewBox h2 {
+  letter-spacing: 1px;
+}
+.mainProdPageContainer .mainProdContainer .reviewBox .yellowLine {
+  border-bottom: 2px solid rgb(250, 250, 45);
+  width: 120px;
+}
+.mainProdPageContainer .mainProdContainer .reviewBox .review {
+  height: 72vh;
+  overflow-y: scroll;
+}
+.mainProdPageContainer .mainProdContainer .reviewBox .review p {
+  font-size: 1.1rem;
+}
+.mainProdPageContainer .mainProdContainer .reviewBox .review hr {
+  margin: 1rem 0;
+}
