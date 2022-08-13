@@ -120,6 +120,9 @@
   height: 72vh;
   overflow-y: scroll;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 .mainProdPageContainer .mainProdContainer .reviewBox .review p {
   font-size: 1.1rem;
 }
